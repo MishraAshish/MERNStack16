@@ -3,10 +3,10 @@ import * as ActionTypes from "../actionTypes";
 
 const Initial_State = {
     User : {
-        userName : "Jeffery",
-        password : "nhi",
-        street : "new york",
-        mobile : 95
+        userName : "",
+        password : "",
+        street : "",
+        mobile : 0
     }
 }
 

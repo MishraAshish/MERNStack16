@@ -1,4 +1,5 @@
 //this defines all the actions raised for user state like - adduserToStore, signinupUser, etc
+import { getUserCart } from "../Cart/CartAction";
 import * as ActionTypes from "../actionTypes"
 import axios from "axios";
 
@@ -24,6 +25,7 @@ export const saveUserToDb = (user)=>{
                 console.log(signdUser)
 
                 dispatch(AddUserToStore(signdUser))
+                dispatch(getUserCart(signdUser._id))
             })
             .catch((err)=>{
                 console.log(err)

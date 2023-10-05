@@ -16,11 +16,7 @@ export default function CartReducer(state = INITIAL_STATE, action)
         
          //to select all the items except the one which we click to remove
         case ActionTypes.REMOVE_ITEM:
-            return state.filter(item => item._id!=action.payload.id)
-
-        //empty cart
-        case ActionTypes.EMPTY_CART:
-            return [];
+            return state.filter(item => item._id!=action.payload.id)        
         
         //update quantity of an item in cart
         case ActionTypes.UPDATE_ITEM:
@@ -30,6 +26,10 @@ export default function CartReducer(state = INITIAL_STATE, action)
                 }
                 return item;//for all other items in cart do not update anything
             })
+
+        //empty cart
+        case ActionTypes.EMPTY_CART:
+            return [];
         
         default:
             return state;
