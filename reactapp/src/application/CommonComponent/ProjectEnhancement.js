@@ -1,3 +1,18 @@
+// 09-10-2023 - Practice
+
+// Checkout Component
+// Create A functional component and use react hook or using container to read data from store
+// Show - User Details (Name, address) //We will deliver products to below address kind of message as well
+// Show Table of cart put up for purchase (you need to re-use the cartlist and cartitem components)
+// Show the purchase Summary (total qty and total amount)
+// Show a Button to Proceed to Payment
+// Integrate this page on CartComponent Button (Go to checkout) -(Go To Checkout From Cart Component)
+
+// Second Task :
+// Create a state using useState to show hide (Make Payment Message)
+// Upon Clicking on MakePayment button, hide everything and just show the message - "Thankyou for the payment, your items under process!"
+// Change the header from Checkout Page to Payment Page
+
 // 02-10-2023 - Practice
 
 // Cart Implementation
@@ -14,3 +29,10 @@
 // Create a form to allow user to submit Product Details - name, price, desc, rating
 // Create an action method to add the detail to database using a server api
 // Server Side - Create product router and api to save the product using productdatamodel
+
+
+// Hobby - Additional Task
+//1. Create a component with name Hobby, add a textbox to insert hobbyname into it and save it to the database using SaveAPI
+//2. Create an action to save the hobby, can use useractions file and userrouter file for the same
+
+//Fetch the saved hobbies and show them in Login Page so that user can select any hobby and update the user info
