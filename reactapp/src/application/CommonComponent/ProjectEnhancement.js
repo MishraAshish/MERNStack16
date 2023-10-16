@@ -1,3 +1,16 @@
+// 17-10-2023 - Review Page
+// This should get its reviews from recent orders page
+// User should be allowed to give ratings and his comments to each products
+// Upon successful submission each product should have a link to show its review 
+// When user expands product detail we should also see the button to which will take us to its review
+// on recent order page we can show a popup to submit rating or a new page its up to you //can use -> react bootstrap
+// user should only be able to give rating once cancel button is gone
+
+// 16-10-2023 - Reorder Page
+// Reorder
+// User to reorder from recent orders or from cancelled orders
+// A Simple process just add the order to your cart and replace or merge whatever is present in cart
+
 // 12-10-2023 - Cancelled Orders
 // Save the order to CancelledOrders collection (should have userid, cancelled, dateTime)
 // Make API to Save and Fetch from CancelledOrders
@@ -15,7 +28,7 @@
 // order can be cancelled within 2 days after that it should be marked delivered
 
 
-// 10-10-2023 - Practice
+// 10-10-2023 - Coupon Page
 
 // Coupon Page 
 // Create a component with Name - CouponComponent (Functional Component and Use Hooks)
@@ -30,7 +43,7 @@
 // In Product Component show Save to product section only to a user with name "admin" so that not all users 
 // can insert the products to database 
 
-// 09-10-2023 - Practice
+// 09-10-2023 - Checkout Component
 
 // Checkout Component
 // Create A functional component and use react hook or using container to read data from store
@@ -45,7 +58,7 @@
 // Upon Clicking on MakePayment button, hide everything and just show the message - "Thankyou for the payment, your items under process!"
 // Change the header from Checkout Page to Payment Page
 
-// 02-10-2023 - Practice
+// 02-10-2023 - Cart Implementation
 
 // Cart Implementation
 // Create New Cart Component using react hooks, functional component

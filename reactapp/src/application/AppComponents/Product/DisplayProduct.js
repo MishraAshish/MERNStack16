@@ -12,7 +12,7 @@ let DisplayProduct = (props)=>{
     useEffect(()=>{
         products && products.length == 0 ? dispatchToFetchProducts(fetchProducts()) : ""
     },
-    [])
+    []) //executes for one time and then initializes products with [] //componentDidMount
 
     return(
         <>
