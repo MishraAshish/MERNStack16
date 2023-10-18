@@ -1,19 +1,20 @@
-import React, { Component, Suspense } from "react";
+import React, { Component, Suspense, lazy } from "react";
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 
 import "./app.css"
 
-import Header from "./CommonComponent/HeaderComponent";
+let Header = lazy(()=> import("./CommonComponent/HeaderComponent"));
 //import ChildComponent from "./CommonComponent/ChildComponent";
-import Home from "./CommonComponent/HomeComponent";
-import Footer from "./CommonComponent/FooterComponent";
-import About from "./CommonComponent/AboutComponent";
-import NotFound from "./CommonComponent/NotFound";
+let Home = lazy(()=> import("./CommonComponent/HomeComponent"));
+let Footer = lazy(()=> import("./CommonComponent/FooterComponent"));
+let About = lazy(()=> import("./CommonComponent/AboutComponent"));
+let NotFound = lazy(()=> import("./CommonComponent/NotFound"));
 //import User from "./AppComponents/User/UserComponent";
 //import User from "./AppComponents/User/UserContainer";
-import UserHook from "./AppComponents/User/UserHook";
-import Product from "./AppComponents/Product/ProductComponent";
-import Cart from "./AppComponents/Cart/CartComponent"
+let UserHook = lazy(()=> import("./AppComponents/User/UserHook"));
+let Product = lazy(()=> import("./AppComponents/Product/ProductComponent"));
+let Cart = lazy(()=> import("./AppComponents/Cart/CartComponent"));
+let UnderstandingHooks = lazy(()=> import("./Hooks/UnderstandingHooks"));
 
 
 export default class Application extends Component {
@@ -27,6 +28,7 @@ export default class Application extends Component {
                             <Route path="/home" element={<Home user={"User"} userName={"Boubacar"}/>}/>
                             <Route path="/product" element={<Product />} />
                             <Route path="/hook" element={<UserHook />} />
+                            <Route path="/learn" element={<UnderstandingHooks />} />
                             <Route path="/cart" element={<Cart />} />
                             <Route path="/about" element={<About />} />
                             <Route path='/about/:id' element={<About />} />
